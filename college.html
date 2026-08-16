@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>D. R. Mane College, Kagal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #123c69;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .college-name h1 {
+            font-size: 28px;
+        }
+
+        .college-name p {
+            font-size: 14px;
+            margin-top: 3px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #0b2c4d;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 430px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+
+            background: linear-gradient(
+                rgba(18, 60, 105, 0.85),
+                rgba(18, 60, 105, 0.85)
+            );
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 800px;
+        }
+
+        .hero-content h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd166;
+            color: #222;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* Common Section */
+        section {
+            padding: 60px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #123c69;
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+
+        /* About */
+        .about {
+            background: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            color: #555;
+            font-size: 17px;
+        }
+
+        /* Courses */
+        .courses {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .course-card {
+            background: white;
+            width: 270px;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .course-card h3 {
+            color: #123c69;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .course-card p {
+            color: #666;
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        /* Facilities */
+        .facilities {
+            background: white;
+        }
+
+        .facility-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .facility {
+            background: #f5f7fb;
+            width: 220px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .facility h3 {
+            color: #123c69;
+            margin-top: 10px;
+        }
+
+        /* Admission */
+        .admission {
+            text-align: center;
+            background: #eaf2f8;
+        }
+
+        .admission p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            background: #123c69;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0b2c4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+
+            header {
+                text-align: center;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .hero-content h2 {
+                font-size: 32px;
+            }
+
+            .hero-content p {
+                font-size: 17px;
+            }
+
+            .course-card,
+            .facility {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- College Header -->
+    <header>
+
+        <div class="college-name">
+            <h1>D. R. Mane College</h1>
+            <p>Kagal, Maharashtra</p>
+        </div>
+
+        <div>
+            🎓 Excellence in Education
+        </div>
+
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h2>Welcome to D. R. Mane College, Kagal</h2>
+
+            <p>
+                Empowering students with knowledge, skills and
+                opportunities for a brighter future.
+            </p>
+
+            <a href="#about" class="btn">
+                Explore College
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About College -->
+    <section class="about" id="about">
+
+        <h2>About Our College</h2>
+
+        <p>
+            D. R. Mane College, Kagal is dedicated to providing
+            quality education and creating a positive learning
+            environment for students. The college focuses on
+            academic excellence, skill development and overall
+            personality development.
+        </p>
+
+    </section>
+
+
+    <!-- Courses -->
+    <section id="courses">
+
+        <h2>Our Courses</h2>
+
+        <div class="courses">
+
+            <div class="course-card">
+
+                <div class="icon">💻</div>
+
+                <h3>Computer Science</h3>
+
+                <p>
+                    Learn programming, web development,
+                    software and modern technologies.
+                </p>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="icon">📊</div>
+
+                <h3>Commerce</h3>
+
+                <p>
+                    Develop knowledge in accounting,
+                    business and finance.
+                </p>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="icon">📚</div>
+
+                <h3>Arts</h3>
+
+                <p>
+                    Explore humanities, languages,
+                    social sciences and creative subjects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Facilities -->
+    <section class="facilities" id="facilities">
+
+        <h2>College Facilities</h2>
+
+        <div class="facility-container">
+
+            <div class="facility">
+                <div class="icon">📖</div>
+                <h3>Library</h3>
+                <p>Books and study resources for students.</p>
+            </div>
+
+            <div class="facility">
+                <div class="icon">💻</div>
+                <h3>Computer Lab</h3>
+                <p>Modern computers for practical learning.</p>
+            </div>
+
+            <div class="facility">
+                <div class="icon">🏃</div>
+                <h3>Sports</h3>
+                <p>Facilities for sports and physical activities.</p>
+            </div>
+
+            <div class="facility">
+                <div class="icon">🚌</div>
+                <h3>Transport</h3>
+                <p>Transportation facilities for students.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Admission -->
+    <section class="admission" id="admission">
+
+        <h2>Admissions</h2>
+
+        <p>
+            Interested students can contact the college office
+            for information about courses, eligibility,
+            admission procedures and important dates.
+        </p>
+
+        <a href="#contact" class="btn">
+            Contact College
+        </a>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Kagal, Kolhapur, Maharashtra</p>
+
+        <p>📧 Email: info@drmanecollege.edu.in</p>
+
+        <p>📞 Phone: +91 XXXXX XXXXX</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 D. R. Mane College, Kagal | All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+</html>
